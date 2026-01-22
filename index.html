@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <style>
+         
+
+
+          /* .brand-text{
+  letter-spacing: 10px;
+  font-size: 40px;
+   */
+
+ 
+
+  .nav-item.dropdown:hover .dropdown-menu  {
+  display: block;
+  
+}
+
+ /* .mega-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+} */
+ 
+/* .bi {
+  cursor: pointer;
+} */
+ /* .video-wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+/* .video-wrapper video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} */
+
+
+/* Snow layer */
+.snow{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+/* BIG ICE */
+.snow span{
+  position:absolute;
+  top:-50px;
+  width:14px;
+  height:14px;
+  background:rgba(255,255,255,.95);
+  border-radius:50%;
+  box-shadow:0 0 10px rgba(255,255,255,.8);
+  animation: iceFall linear infinite;
+}
+
+/* Extra BIG random */
+.snow span:nth-child(odd){
+  width:20px;
+  height:20px;
+}
+
+/* FAST motion */
+.snow span:nth-child(1){ left:5%;  animation-duration:2.5s;}
+.snow span:nth-child(2){ left:15%; animation-duration:2s;}
+.snow span:nth-child(3){ left:25%; animation-duration:2.8s;}
+.snow span:nth-child(4){ left:35%; animation-duration:1.9s;}
+.snow span:nth-child(5){ left:45%; animation-duration:2.2s;}
+.snow span:nth-child(6){ left:55%; animation-duration:2.6s;}
+.snow span:nth-child(7){ left:65%; animation-duration:2.1s;}
+.snow span:nth-child(8){ left:75%; animation-duration:1.8s;}
+.snow span:nth-child(9){ left:85%; animation-duration:2.4s;}
+.snow span:nth-child(10){ left:95%; animation-duration:2s;}
+
+.snow span:nth-child(11){ left:10%; animation-duration:1.7s;}
+.snow span:nth-child(12){ left:30%; animation-duration:2.3s;}
+.snow span:nth-child(13){ left:50%; animation-duration:1.9s;}
+.snow span:nth-child(14){ left:70%; animation-duration:2.5s;}
+.snow span:nth-child(15){ left:90%; animation-duration:2.1s;}
+
+@keyframes iceFall{
+  0%{
+    transform: translateY(0);
+    opacity:0;
+  }
+  10%{ opacity:1; }
+  100%{
+    transform: translateY(110vh);
+    opacity:0;
+  }
+}
+
+
+</style>
+</head>
+<body class="m-0 p-0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+        <div class="" style="background-color: rgb(232, 210, 232);height: 50px;">
+            <p class="text-center p-2"> Complimentary Shipping on all U.S. Domestic Orders</p>
+            </div>
+
+             <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid  p-2">
+    
+
+    
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu"
+      aria-controls="menu"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand position-absolute start-50 top-50 translate-middle 
+          fw-semi-bold d-flex align-items-center gap-2 
+          "style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
+   href="page1.html">
+  <i style="color:rgb(150, 73, 221);" class="bi bi-flower1 fs-1"></i>
+  <span style="color:rgb(150, 73, 221);" class="brand-text fs-1  ">TATCHA</span>
+</a>
+
+   
+    <div class="collapse navbar-collapse fs-5 " id="menu"
+    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+
+     
+      <ul class="navbar-nav px-4  ">
+
+        <li class="nav-item dropdown d-block position-static ">
+  <a class="nav-link  text-dark "
+     href="page222.html"
+     >
+    Shop
+  </a>
+
+  <div class="dropdown-menu mega-menu border-0 shadow w-100 mt-0 start-0 end-0">
+    <div class="container-fluid px-5 py-4">
+      <div class="row">
+
+       
+        <div class="col-md-3">
+          <ul class="list-unstyled lh-lg">
+            <li>All Skincare</li>
+            <li>Bestsellers</li>
+            <li>Gifts & Sets</li>
+            <li>New</li>
+            <li>Gifting</li>
+            <li>Exclusives</li>
+            <li>Minis</li>
+            <li>Gift Card</li>
+          </ul>
+        </div>
+
+        
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Shop by Category</h6>
+          <ul class="list-unstyled lh-lg">
+            <li>Moisturizers</li>
+            <li>Facial Cleansers & Exfoliators</li>
+            <li>Serums & Essence</li>
+            <li>Masks & Treatments</li>
+            <li>Eye Care</li>
+            <li>Primer & Makeup Essentials</li>
+            <li>Lip Care</li>
+            <li>SPF</li>
+            <li>Body Care</li>
+            <li>Blotting Papers & Tools</li>
+          </ul>
+          <a href="#" class="fw-bold text-decoration-underline">Explore</a>
+        </div>
+
+        
+        <div class="col-md-3 text-center">
+          <img src="image/gift2.avif" class="img-fluid mb-3">
+          <button class="btn btn-outline-dark w-100">
+            SELF LOVE IS A GIFT
+          </button>
+        </div>
+
+       
+         <div class="col-md-3 text-center">
+          <img src="image/gift2.avif" class="img-fluid mb-3">
+          <button class="btn btn-outline-dark w-100">
+            SELF LOVE IS A GIFT
+          </button>
+        </div>
+       
+
+      </div>
+    </div>
+  </div>
+</li>
+
+        <li class="nav-item dropdown position-static">
+  <a class="nav-link   text-dark"
+     href="page3.html"
+     data-bs-toggle="dropdown"
+     >
+    About
+  </a>
+
+  <div class="dropdown-menu mega-menu border-0 shadow w-100 mt-0 start-0 end-0">
+    <div class="container-fluid px-5 py-5">
+      <div class="row align-items-start">
+
+        
+        <div class="col-md-4">
+          <ul class="list-unstyled lh-lg fs-5">
+            <li>Our Story</li>
+            <li>Ingredients</li>
+            <li>Giving Back</li>
+            <li>Read Our Blog</li>
+          </ul>
+        </div>
+
+       
+        <div class="col-md-4 text-center">
+          <div class="position-relative">
+            <img src="image/gift6.avif" class="img-fluid">
+            <button class="btn btn-light position-absolute bottom-0 start-50 translate-middle-x mb-3 px-4">
+              GIVING BACK
+            </button>
+          </div>
+        </div>
+
+       
+        <div class="col-md-4 text-center">
+          <div class="position-relative">
+            <img src="image/gift 4.avif" class="img-fluid">
+            <button class="btn btn-light position-absolute bottom-0 start-50 translate-middle-x mb-3 px-4">
+              READ OUR BLOG
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</li>
+
+
+      
+        <li class="nav-item dropdown position-static hover-dropdown">
+          <a class="nav-link   text-dark"
+             href="page4.html"
+             >
+            Ritual Finder
+          </a>
+
+          <ul class="dropdown-menu bg-light border-0 shadow-sm mega-menu p-5 w-100 start-0 end-0">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+
+     
+        <li class="nav-item dropdown position-static hover-dropdown">
+          <a class="nav-link   text-dark"
+             href="page5.html"
+            >
+            Gifting 
+          </a>
+
+          <ul class="dropdown-menu bg-light border-0 shadow-sm mega-menu p-5 w-100 start-0 end-0">
+            <li><a class="dropdown-item" href="#">Self-Love is a Gift</a></li>
+            <li><a class="dropdown-item" href="#">Holiday Gift Guide</a></li>
+            <li><a class="dropdown-item" href="#">Gift Sets</a></li>
+            <li><a class="dropdown-item" href="#"> Gift Card</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      
+      
+        <div class="d-flex gap-5 ms-lg-auto mt-3 mt-lg-0">
+        <div class="d-flex gap-4 px-4">
+        <i class="bi bi-search"data-bs-toggle="modal"data-bs-target="#searchModal"style="cursor:pointer;font-size:20px;"></i>
+       <i class="bi bi-person-circle" style="cursor:pointer; font-size:22px;"data-bs-toggle="modal"data-bs-target="#loginModal"></i>
+       <i class="bi bi-bag-check"style="cursor:pointer; font-size:22px;"data-bs-toggle="offcanvas"data-bs-target="#cartCanvas"></i>
+     <div class="modal fade" id="searchModal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen h-75">
+    <div class="modal-content rounded-0">
+      <div class="modal-header border-0 justify-content-end">
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="container-fluid py-2 d-flex">
+          <div class="text ms-5">
+            <h3 class="fw-bold mb-4">TATCHA</h3>
+          <h6 class="fw-bold mb-3">Most Popular Searches</h6>
+          <p class="mb-1">Lip</p>
+          <p class="mb-1">Dewy</p>
+          <p class="mb-1">Oil</p>
+          <p class="mb-0">Toner</p>
+          </div>
+          <div class="ms-5">
+          <div class="input-group mb-4">
+            <input type="text" class="form-control form-control-lg" placeholder="Search">
+            <span class="input-group-text bg-dark text-white">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+          <h6>Recommended for you</h6>
+          <div class="box d-flex gap-3">
+            <div class="card" style="width: 18rem;">
+  <img src="image/gift 3.avif" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">AM / PM Moisture Duo</h5>
+    <p class="card-text">Holiday Value Set</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="image/gift 4.avif" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">Delight Dewy Set</h5>
+    <p class="card-text">Holiday Value Set</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="image/gift6.avif" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">The Silk Firming Set</h5>
+    <p class="card-text">Holiday Value Set</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="image/gift6.avif" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">The Camellia Cleansing Oil</h5>
+    <p class="card-text">2-in-1 Makeup Remover & Cleanser</p>
+  </div>
+</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="fw-bold mx-auto mb-0">LOGIN TO TATCHA</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control form-control-lg" placeholder="Email*">
+      </div>
+      <button class="btn btn-dark rounded-pill mb-3">
+         Passwordless Sign In
+      </button>
+      <button class="btn btn-primary w-100 py-2 mb-4">
+        CONTINUE WITH PASSWORD
+      </button>
+      <div class="d-flex align-items-center mb-3">
+        <hr class="flex-grow-1 border border-dark">
+        <span class="mx-2">OR</span>
+        <hr class="flex-grow-1 border border-dark">
+      </div>
+        <button  class="btn bg-white form-control border border-dark mb-3"><div class="form-text text-dark"> <i class="bi bi-google"></i> Continue with Google</div></button>
+        <button  class="btn bg-white form-control border border-dark mb-3"><div class="form-text text-dark"> <i class="bi bi-amazon"></i> Continue with Google</div></button>
+      <p class="text-center mb-0">
+        New to Tatcha?
+        <a href="#" class="text-decoration-none">Create An Account</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end w-50" tabindex="-1" id="cartCanvas">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="mb-0">Your Bag (1 Item)</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex gap-3 mb-3">
+      <img src="image/cream 4.avif" class="h-25 w-50">
+      <div class="flex-grow-1">
+        <h6 class="mb-1">The Silk Serum</h6>
+        <small>Full Size</small>
+        <div class="d-flex align-items-center gap-2 mt-2">
+          <select class="form-select form-select-sm w-auto">
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <a href="#" class="text-decoration-underline small">Remove</a>
+        </div>
+      </div>
+      <strong>$98.00</strong>
+    </div>
+    <div class="bg-light p-3 rounded mb-4">
+      <small class="fw-bold d-block mb-2">PAIRS BEST WITH</small>
+      <div class="d-flex gap-3">
+        <img src="image/cream1.avif">
+        <div>
+          <strong>The Silk Cream</strong>
+          <p class="small mb-2">
+            Continue your skin-smoothing ritual with our moisturizer.
+          </p>
+          <button class="btn btn-outline-dark btn-sm">
+            ADD TO BAG - $125
+          </button>
+          <a href="#" class="ms-2 small">Add Mini - $38</a>
+        </div>
+      </div>
+    </div>
+    <h6 class="fw-bold">Get 3 Free Samples. Add Samples</h6>
+    <div class="d-flex col-3 gap-3">
+      <img src="image/cream5.avif" class="w-100 img-fluid">
+            <img src="image/gift6.avif" class="w-100 img-fluid">
+      <img src="image/gift2.avif" class="w-100 img-fluid">
+    </div>
+    <hr class="flex-grow-1">
+    <div class="input-group mb-4 border border-gray">
+      <input class="form-control" placeholder="Promo Code">
+      <button class="btn btn-secondary">APPLY</button>
+    </div>
+    <hr class="flex-grow-1">
+    <h6 class="fw-bold mb-2">You May Also Like</h6>
+   <div class="box d-flex gap-3 text-sm">
+            <div class="card w-100">
+  <img src="image/cream2.avif" class="card-img-top">
+  <div class="card-body">
+    <p class="card-text">The Rice Wash</p>
+    <h6 class="card-title">$40</h6>
+  </div>
+</div>
+<div class="card w-100">
+  <img src="image/cream4.avif" class="card-img-top">
+  <div class="card-body">
+    <p class="card-text">The Water Cream</p>
+    <h6 class="card-title">$93</h6>
+  </div>
+</div>
+<div class="card w-100">
+  <img src="image/cream3.avif" class="card-img-top">
+  <div class="card-body">
+    <p class="card-text">The longevity S</p>
+    <h6 class="card-title">$80</h6>
+  </div>
+</div>
+<div class="card w-100">
+  <img src="image/cream5.avif" class="card-img-top">
+  <div class="card-body">
+    <p class="card-text">The Dewy Milk M</p>
+    <h6 class="card-title">$64</h6>
+  </div>
+</div>
+          </div>
+  </div>
+      <hr class="flex-grow-1">
+  <div class="border-top p-3">
+    <div class="d-flex justify-content-between mb-2">
+      <strong>Estimated Total</strong>
+      <strong>$98.00</strong>
+    </div>
+    <button class="btn btn-primary w-100 mb-2">
+      🔒 SECURE CHECKOUT
+    </button>
+    <div class="d-flex gap-2">
+      <button class="btn btn-dark w-100">Amazon Pay</button>
+      <button class="btn btn-dark w-100" disabled>PayPal</button>
+      <button class="btn btn-dark w-100">afterpay</button>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
+</nav>
+            
+    
+<div class="container-fluid px-0">
+  <div class="position-relative">
+
+    <!-- IMAGE -->
+    <img class="w-100 d-block" src="image/iceee.avif" alt="">
+
+    <!-- SNOW OVER IMAGE -->
+    <div class="snow">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- TEXT OVER IMAGE -->
+    <div class="
+      position-absolute top-50 end-0 translate-middle-y p-4 text-dark text-center  ">
+      <p class=" mt-5 ">Exclusive Sets of Our Bestsellers</p>
+      <h4 class="">Gift Self-Care Inspire<br>Self-Love.</h4>
+      <p class="">
+       Make their holiday with nourishing formulas that make their skincare<br>
+      </p>
+        <!-- <button class="btn btn-dark mt-3 px-4 py-2">
+    SHOP GIFT SETS
+  </button>   -->
+  <h5 class="bg-dark  text-light px-4 py-2 position-absolute start-50 translate-middle-x"> SHOP GIFT SETS </h5>
+
+       
+    
+     
+    </div>
+
+  </div>
+</div>
+
+
+    
+    <div style="background-color: rgb(232, 210, 232);height: 50px ;">
+       <div class="d-flex justify-content-center gap-5">
+
+      <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-truck fs-4"></i>
+      <span class="fw-semibold">Free Shipping</span>
+    </div>
+
+    
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-arrow-repeat fs-4"></i>
+      <span class="fw-semibold">Free Returns</span>
+    </div>
+
+  
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-credit-card fs-4"></i>
+      <span class="fw-semibold">Free Samples</span>
+    </div>
+       </div>
+            </div>
+        <h2 class="text-center mt-4">Recommded For Our Friends</h2>
+      </div>
+     
+       <div class="container mt-4 position-relative">
+
+  <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel">
+
+
+  <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+        type="button btn-dark"
+        data-bs-target="#multiCardCarousel"
+        data-bs-slide="prev"
+        style="width:auto;">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+        type="button"
+        data-bs-target="#multiCardCarousel"
+        data-bs-slide="next"
+        style="width:auto;">
+  <span class="carousel-control-next-icon"></span>
+</button>
+
+
+    <div class="carousel-inner">
+
+  
+      <div class=" carousel-item active">
+        <div class="row mx-0 flex-nowrap">
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream1.avif" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                 <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream2.avif" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                 <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream3.avif" class="card-img-top">
+              <div class="card-body ">
+               <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                 <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream4.avif" class="card-img-top">
+              <div class="card-body ">
+                 <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                 <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class=" carousel-item">
+        <div class="row flex-nowrap">
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream4.avif" class="card-img-top">
+              <div class="card-body">
+                 <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream5.avif" class="card-img-top">
+              <div class="card-body ">
+                 <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+             
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream1.avif" class="card-img-top">
+              <div class="card-body ">
+                 <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow-sm">
+              <img src="image/cream3.avif" class="card-img-top">
+              <div class="card-body ">
+                 <h6 class="card-title">The Dewy Skin Cream -Limited..</h6>
+                 <p class="card-text">Rich Line-Plumping Moisturize</p>
+                <div class=" d-flex  ms-auto">
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill "></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+         <p>5560 Reviews</p>
+      </div>
+                
+   <button class="btn btn-outline-dark w-100">
+            ADD To BAG-$93
+          </button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 p-5 text-dark">
+      <h6 class="text-uppercase">Exclusive Sets of Our Bestsellers</h6>
+      <h1 class="">Gift Self-Care. Inspire<br>Self-Love.</h1>
+      <p class="mt-3">
+        Make their holiday with nourishing formulas that make their skincare<br> ritual luxurious,
+        available in special value gift sets only on<br> Tatcha.com.
+      </p>
+      <button class="btn btn-dark mt-3">SHOP HOLIDAY SETS</button>
+    </div>
+
+  
+    <div class="col-md-6 text-center">
+      <img class="img-fluid mt-3" src="image/shoces.avif">
+    </div>
+
+  </div>
+  </div>
+
+<div class="text-center mt-5">
+  <h2 class="fw-bold">A Formula For Every Skin Type</h2>
+</div>
+
+<div class="container mt-4">
+  <div class="d-flex d-md-flex justify-content-md-center 
+              overflow-auto overflow-md-visible gap-4 px-3">
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/dry.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Dry</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/oily.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Oily</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/sensetive.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Sensitive</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/mature.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Mature</p>
+    </div>
+
+  </div>
+</div>
+<div class="text-center mt-5">
+  <h2 class="fw-bold">Shop by Skin Benefits</h2>
+</div>
+
+<div class="container mt-4">
+  <div class="d-flex d-md-flex justify-content-md-center 
+              overflow-auto overflow-md-visible gap-4 px-3">
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="benefit_sq_clarifying.png.webp" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Clarifying</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/brightening.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Brightening</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/moisturizing.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Moisturizing</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/calming.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Calming</p>
+    </div>
+
+    <div class="text-center flex-shrink-0" style="width:150px;">
+      <img src="image/healthyaging.avif" class="img-fluid" alt="">
+      <p class="mt-2 fw-bold">Healthy Aging</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="container-lg ">
+  <div class="row">
+    <div class="col-md-6">
+    <div class="card">
+      <img src="image/gift set.avif">
+      <div class="card-body">
+        <h5 class="card-title">Curate Your Own Gift Set</h5>
+        <p class="card-text">For a limited time,enjoy up to 15% off 4 full sizes of your choice and recevie a complimentary keepsake box to complete your gift.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      </div>
+    </div>
+    
+      <div class="col-md-6">
+        <div class="card">
+      <img src="image/the gift  guide.avif">
+      <div class="card-body">
+        <h5 class="card-title">The Gift Guide</h5>
+        <p class="card-text">Not sure what to get? Explore our recommendations for everyone on your listfor everyone on your. </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="container-fluid p-0 position-relative">
+
+  <video autoplay muted loop playsinline class="w-100" style="height:100vh; object-fit:cover;">
+    <source src="image/videoplayback.mp4" type="video/mp4">
+  </video>
+
+  
+  <div style="opacity: 0.8;" class="position-absolute top-50 start-50 translate-middle bg-white  p-4 rounded shadow text-center ">
+    
+    <h3 class="mb-2">From Japan With Love</h3>
+    <p  class="text-dark">With high-quality, nutrient-dense ingredients harvested from renowned sources in Japan, our formulas are gentle yet effective.</p>
+    <button class="btn btn-outline-dark">Learn More</button>
+    
+  </div>
+
+</div>
+
+
+
+<div class="container-fluid text-center py-2" style="background-color: rgb(232, 210, 232);">
+  Every Tatcha purchase supports education equality worldwide. Learn more
+</div>
+
+
+<div class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <h4>Keep in Touch</h4>
+        <p>Signup for access to special offers, new products, tips, and more.</p>
+        <input type="email" class="form-control mb-3" placeholder="Email address*">
+        <i class="bi bi-instagram fs-4 me-2"></i>
+        <i class="bi bi-facebook fs-4"></i>
+      </div>
+
+      <div class="col-md-2">
+        <h6>Company</h6>
+        <ul class="list-unstyled">
+          <li>About Us</li>
+          <li>Giving Back</li>
+          <li>Where to Buy</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Help</h6>
+        <ul class="list-unstyled">
+          <li>Help Center</li>
+          <li>Shipping</li>
+          <li>Return Policy</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Account</h6>
+        <ul class="list-unstyled">
+          <li>My Account</li>
+          <li>Subscribe & Save</li>
+          <li>Track Order</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="bg-info text-white py-2">
+  <div class="container">
+    <p class="mb-0">
+      <a href="#" class="btn btn-outline-dark btn-sm">United States</a>
+    @2025 Tatcha, LLC. All Rights Reserved. Cookie and Privacy Notice Consumer Health Data Privacy Policy Terms & Conditions Terms of Sale Cookie Settings Do Not Sell or Share My Personal Information Sitemap Modern Slavery Act Accessibility
+    </p>
+  </div> 
+    </div>
+  
+<!-- Vertical Offer Button -->
+<div class="position-fixed top-50 start-0 translate-middle-y text-white px-2 py-3 rounded-end d-flex align-items-center"
+     style="writing-mode: vertical-rl; z-index:1050; background-color: blueviolet; cursor:pointer;"
+     data-bs-toggle="modal" data-bs-target="#offerModal">
+     <button type="button"
+          class="btn-close btn-close-white mb-2"
+          aria-label="Close"
+          onclick="this.closest('div').remove()">
+  </button>
+
+  <span class="fw-semibold text-uppercase"
+        style="transform: rotate(180deg); letter-spacing:1px;">
+    Get 15% Off
+  </span>
+</div>
+<div class="modal fade" id="offerModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Register & Get 15% Off</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <div class="row g-0">
+
+          <!-- Left Image -->
+          <div class="col-md-5 d-none d-md-block">
+            <img src="image/box8.avif"
+                 class="img-fluid h-100 w-100"
+                 style="object-fit: cover;"
+                 alt="Offer Image">
+          </div>
+
+          <!-- Right Form -->
+          <div class="col-md-7 p-4">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter email">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" placeholder="Enter mobile number">
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Register Now
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  
+  
+
+    
+</body>
+</html>
